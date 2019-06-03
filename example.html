@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script src="wkembed.js"></script>
+  </head>
+  <body>
+    The content of your page
+    <div id="wk-container"></div>
+  </body>
+  <script>
+    app = new WKEmbedUI({
+      publicid:'[DEVICE-ID]',
+      raToken: '[REMOTE-ADMIN-TOKEN-UUID]',
+      container: 'wk-container'
+    });
+  </script>
+</html>

@@ -1,0 +1,3 @@
+- git tag "vX.Y"
+- git push --tags
+- Build in CI

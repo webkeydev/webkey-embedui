@@ -7,8 +7,8 @@ function WKEmbedUI(options) {
 
   var setDeviceReferenceType = function(options) {
     if ('publicid' in options === true) {
-  	  self.refType = 'publicid';
-  	  self.devid= options.publicid;
+      self.refType = 'publicid';
+      self.devid= options.publicid;
     } else if ('serial' in options === true) {
       self.refType = 'serial';
       self.devid= options.serial;

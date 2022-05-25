@@ -12,9 +12,6 @@ function WKEmbedUI(options) {
     } else if ('serial' in options === true) {
       self.refType = 'serial';
       self.devid= options.serial;
-    } else if ('devicenick' in options === true) {
-      self.refType = 'devicenick';
-      self.devid= options.devicenick;
     }
   };
 

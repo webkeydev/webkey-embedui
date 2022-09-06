@@ -20,7 +20,7 @@ function WKEmbedUI(options) {
     params=self.refType+"="+self.devid;
     params+="&ratoken="+self.raToken;
     params+="&wmode=embed";
-    ifrm.setAttribute("src", "https://webkeyapp.com/mgm?"+params);
+    ifrm.setAttribute("src", "https://device.webkeyapp.com/?"+params);
     ifrm.style.width = "100%";
     ifrm.style.height = "100%";
     ifrm.style.minWidth = "400px"

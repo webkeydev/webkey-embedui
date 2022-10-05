@@ -4,6 +4,7 @@ function WKEmbedUI(options) {
   this.raToken = options.raToken;
   this.refType = "";
   this.devid = "";
+  this.extlink = options.extlink;
 
   var setDeviceReferenceType = function(options) {
     if ('publicid' in options === true) {
@@ -20,6 +21,10 @@ function WKEmbedUI(options) {
     params=self.refType+"="+self.devid;
     params+="&ratoken="+self.raToken;
     params+="&wmode=embed";
+    if (self.extlink) {
+        params+="&extlink=disabled";
+    }
+
     ifrm.setAttribute("src", "https://device.webkeyapp.com/?"+params);
     ifrm.style.width = "100%";
     ifrm.style.height = "100%";
